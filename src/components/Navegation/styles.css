@@ -1,0 +1,53 @@
+header h1 {
+  margin-top: 20px;
+  text-align: center;
+  letter-spacing: 0.2ch;
+}
+
+header .div--lineHeader {
+  width: 100%;
+  position: absolute;
+  top: 80px;
+  height: 4px;
+  background-color: #63fad4;
+}
+
+header .div--wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px;
+  position: relative;
+  top: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .div--wrapper a {
+  padding: 10px;
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+}
+
+header .div--wrapper a:hover {
+  background-color: #63fad4;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+header .div--animation {
+  background-color: #63fad4;
+  height: 4px;
+  width: 50px;
+  position: absolute;
+  left: 43%;
+  top: 84px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+/*# sourceMappingURL=styles.css.map */
