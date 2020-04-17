@@ -1,20 +1,15 @@
 $bodyColor: rgb(59, 59, 59);
-$whiteColor: #fff;
-$greenDark: rgba(185, 255, 238, 0.6);
 $greenNormal: rgb(99, 250, 212);
-$greedColor: rgb(67, 110, 99);
+$whiteColor: #fff;
 
 * {
   padding: 0;
   margin: 0;
 }
 
-html {
-  height: 100%;
-  width: 100%;
-}
-
+html,
 body {
+  height: 100%;
   width: 100%;
 }
 
@@ -75,7 +70,7 @@ body {
       height: 6px;
       width: 50px;
       position: absolute;
-      top: 82px;
+      top: 66px;
       left: 43%;
       transition: 1s;
     }
@@ -84,84 +79,9 @@ body {
   main {
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
-
     width: 100%;
-    img {
-      height: 250px;
-      width: 400px;
-      margin: 10px;
-      border-radius: 4px;
-    }
-
-    p {
-      text-align: start;
-    }
-
-    article {
-      margin-top: 40px;
-      width: 40%;
-    }
-
-    form {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: center;
-
-      height: 400px;
-      width: 30%;
-      box-shadow: -2px 4px 64px 6px $greenDark;
-      background: $bodyColor;
-      border-radius: 4px;
-      input {
-        width: 30%;
-        height: 6%;
-        background: none;
-        outline: none;
-        border: none;
-        border-bottom: 1px solid $greenDark;
-        border-radius: 4px;
-        padding: 0 10px;
-        color: $whiteColor;
-
-        &:focus {
-          border-bottom: 1px solid$greenDark;
-        }
-
-        &::placeholder {
-          color: $whiteColor;
-        }
-      }
-      textarea {
-        max-width: 40%;
-        min-width: 10%;
-        max-height: 20%;
-        min-height: 10%;
-        background: none;
-        border: 1px solid $greenDark;
-        padding: 10px;
-        outline-color: $greedColor;
-        color: $whiteColor;
-        &::placeholder {
-          color: $whiteColor;
-        }
-      }
-
-      button {
-        height: 8%;
-        width: 16%;
-        background: none;
-        border-radius: 4px;
-        cursor: pointer;
-        color: $greenDark;
-        outline: none;
-        border: 2px solid $greenDark;
-        text-transform: uppercase;
-        &:focus {
-          border: 1px solid $greenDark;
-        }
-      }
-    }
+    height: 100%;
   }
 }

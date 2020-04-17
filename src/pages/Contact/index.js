@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+import "./styles.scss";
+
 export default function Contact() {
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
@@ -10,32 +12,34 @@ export default function Contact() {
   }
   return (
     <main>
-      <form onSubmit={handleSubmit}>
-        <input
-          type="email"
-          placeholder="Email"
-          value={email}
-          onChange={event => setEmail(event.target.value)}
-          required={true}
-        />
+      <div className="containerContact">
+        <form onSubmit={handleSubmit}>
+          <input
+            type="email"
+            placeholder="Email"
+            value={email}
+            onChange={event => setEmail(event.target.value)}
+            required={true}
+          />
 
-        <input
-          type="text"
-          placeholder="Subject"
-          value={subject}
-          onChange={event => setSubject(event.target.value)}
-        />
+          <input
+            type="text"
+            placeholder="Subject"
+            value={subject}
+            onChange={event => setSubject(event.target.value)}
+          />
 
-        <textarea
-          cols="30"
-          rows="10"
-          placeholder="Write your message here"
-          value={message}
-          onChange={event => setMessage(event.target.value)}
-        />
+          <textarea
+            cols="30"
+            rows="10"
+            placeholder="Write your message here"
+            value={message}
+            onChange={event => setMessage(event.target.value)}
+          />
 
-        <button type="submit">Send</button>
-      </form>
+          <button type="submit">Send</button>
+        </form>
+      </div>
     </main>
   );
 }

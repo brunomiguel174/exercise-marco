@@ -1,0 +1,17 @@
+$greedColor: rgb(67, 110, 99);
+
+.containerGallery {
+    height: 500px;
+    overflow: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+
+    img {
+        height: 120px;
+        width: 160px;
+        border: 1px solid $greedColor;
+    }
+}

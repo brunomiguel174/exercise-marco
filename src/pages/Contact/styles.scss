@@ -1,0 +1,76 @@
+$bodyColor: rgb(59, 59, 59);
+$whiteColor: #fff;
+
+$greenDark: rgba(185, 255, 238, 0.6);
+
+$greedColor: rgb(67, 110, 99);
+
+.containerContact {
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 400px;
+    width: 30%;
+    box-shadow: -2px 4px 64px 6px $greenDark;
+    background: $bodyColor;
+    border-radius: 4px;
+    input {
+      width: 30%;
+      height: 6%;
+      background: none;
+      outline: none;
+      border: none;
+      border-bottom: 1px solid $greenDark;
+      border-radius: 4px;
+      padding: 0 10px;
+      color: $whiteColor;
+
+      &:focus {
+        border-bottom: 1px solid$greenDark;
+      }
+
+      &::placeholder {
+        color: $whiteColor;
+      }
+    }
+    textarea {
+      max-width: 40%;
+      min-width: 10%;
+      max-height: 20%;
+      min-height: 10%;
+      background: none;
+      border: 1px solid $greenDark;
+      padding: 10px;
+      outline-color: $greedColor;
+      color: $whiteColor;
+      &::placeholder {
+        color: $whiteColor;
+      }
+    }
+
+    button {
+      height: 8%;
+      width: 16%;
+      background: none;
+      border-radius: 4px;
+      cursor: pointer;
+      color: $greenDark;
+      outline: none;
+      border: 2px solid $greenDark;
+      text-transform: uppercase;
+      &:focus {
+        border: 1px solid $greenDark;
+      }
+    }
+  }
+}

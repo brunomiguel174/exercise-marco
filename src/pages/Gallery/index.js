@@ -1,17 +1,21 @@
-import React from 'react';
+import React from "react";
 
-import meme1 from '../../assets/images/meme1.jpeg'
-import meme2 from '../../assets/images/meme2.jpg'
-import meme3 from '../../assets/images/meme3.png'
-import meme4 from '../../assets/images/meme4.jpg'
+import troll1 from "../../assets/images/troll1.png";
+import troll2 from "../../assets/images/troll2.jpeg";
+import troll3 from "../../assets/images/troll3.jpeg";
+import troll4 from "../../assets/images/troll4.png";
+
+import "./styles.scss";
 
 export default function Gallery() {
-    return(
-        <main>
-            <img src={meme1} alt="meme1"/>
-            <img src={meme2} alt="meme2"/>
-            <img src={meme3} alt="meme3"/>
-            <img src={meme4} alt="meme4"/>
-        </main>
-    );
+  return (
+    <main>
+      <div className="containerGallery">
+        <img src={troll1} alt="image of trollface 1" />
+        <img src={troll2} alt="image of trollface 2" />
+        <img src={troll3} alt="image of trollface 3" />
+        <img src={troll4} alt="image of trollface 4" />
+      </div>
+    </main>
+  );
 }
